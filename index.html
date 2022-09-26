@@ -77,11 +77,64 @@
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
       }
     }
+     .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+
+    .instagram {
+      background: #cd486b;
+      color: white;
+    }
+
+    .twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .github {
+      background: #000;
+      color: white;
+    }
+
+    .linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    #mode{
+      background: black;
+      color: white;
+    }
   </style>
 </head>
 
 
 <body>
+  <div class="icon-bar">
+    <a href="https://www.linkedin.com/in/amitadhikari-" class="linkedin"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/_amitadhikari_" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/adhikari-amit" class="github"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/_amitadhikari_" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a class="color-mode" id="mode"><i class="fa-solid fa-moon"></i></a>
+  </div>
+  
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container"><a class="navbar-brand" href="#"> <i class="fa-regular fa-face-smile"
           style="font-size:25px;"></i> Amit</a>
