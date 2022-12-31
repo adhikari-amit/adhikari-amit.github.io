@@ -88,8 +88,9 @@
     width: 142px;
     height: 40px;
     margin: -20px 0 0 -71px;
-    background: white;
+    background: rgba(255, 255, 255, 0.76);
     filter: contrast(20);
+    z-index: 2;
 }
 
 .dot {
