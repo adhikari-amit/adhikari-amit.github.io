@@ -424,12 +424,12 @@ strong {
 }
 
 .owl-carousel .owl-nav .owl-prev:before {
-    content: '\e833';
+    /* content: '\e833'; */
     left: -45px
 }
 
 .owl-carousel .owl-nav .owl-next:before {
-    content: '\e836';
+    /* content: '\e836'; */
     right: -45px
 }
 
