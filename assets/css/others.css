@@ -148,3 +148,29 @@
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
+
+
+
+@media (max-width:991px) {
+    .sticky-social{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .sticky-social{
+        display: none;
+    }
+}
+
+@media (max-width:580px) {
+    .sticky-social{
+        display: none;
+    }
+}
+
+@media (max-width:320px) {
+    .sticky-social{
+        display: none;
+    }
+}
