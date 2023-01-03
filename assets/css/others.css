@@ -80,7 +80,9 @@
 #alert {
     color: red;
 }
-
+#success {
+    color: 	#42ba96;
+}
 .wrapper {
     position: absolute;
     top: 50%;
