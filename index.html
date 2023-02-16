@@ -42,18 +42,39 @@
       emailjs.init('XYG7O_snYBP2HKAPb');
     })();
   </script>
+
+  <style>
+    .preloader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: 999999;
+      background-color: #fff;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .preloader {
+      background-image: url('assets/images/loader.gif');
+    }
+  </style>
+
 </head>
 
-<body onload="loadfun()">
+<body>
 
-  <div class="wrapper" id="loading">
+  <!-- <div class="wrapper" id="loading">
     <span class="dot"></span>
     <div class="dots">
       <span></span>
       <span></span>
       <span></span>
     </div>
-  </div>
+  </div> -->
+  <div class="preloader"></div>
+
 
   <div class="sticky-social">
     <ul class="social">
@@ -78,6 +99,7 @@
           <li class="nav-item"><a href="#about" class="nav-link"><span data-hover="About">About</span></a></li>
           <li class="nav-item"><a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a></li>
           <li class="nav-item"><a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link"><span data-hover="Gallery">Gallery</span></a></li>
           <li class="nav-item"><a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a></li>
         </ul>
         <ul class="navbar-nav ml-lg-auto">
@@ -120,8 +142,8 @@
         <div class="col-lg-11 text-center mx-auto col-12">
           <div class="col-lg-8 mx-auto">
             <h2>Things I have Built.</h2>
-            <small>some links maybe broken if client didn't renew the domain or hosting <i
-                class="fa-solid fa-exclamation" style="color: red;"></i> . </small>
+            <small> <i class="fa-solid fa-asterisk" style="color: red;"></i> some links maybe broken if owner of it
+              didn't renew the domain or hosting. </small>
           </div>
           <div class="owl-carousel owl-theme">
             <div class="item">
@@ -133,6 +155,12 @@
             <div class="item">
               <a href="https://kahaniyaa.com" target="_blank">
                 <div class="project-info"><img src="assets/images/project/project2.webp" class="img-fluid" alt="...">
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://zodhyatech.com" target="_blank">
+                <div class="project-info"><img src="assets/images/project/project3.webp" class="img-fluid" alt="...">
                 </div>
               </a>
             </div>
@@ -160,7 +188,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
     <div class="container">
@@ -251,8 +278,69 @@
       </div>
     </div>
   </section>
+
+
+  <section id="gallery">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-12 col-lg-8 mb-2 mb-lg-0">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+      <div class="row no-gutter">
+        <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>School Days</h3> <span>Friends</span>
+            </div> <img class="img-fluid" src="assets/images/gallery/1.jpeg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a class="item-wrap">
+            <div class="work-info">
+              <h3>Technice Club</h3> <span>Activities</span>
+            </div> <img class="img-fluid" src="assets/images/gallery/2.jpeg">
+          </a>
+        </div>
+        <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a class="item-wrap">
+            <div class="work-info">
+              <h3>Collage</h3> <span>Friends</span>
+            </div> <img class="img-fluid" src="assets/images/gallery/3.jpeg">
+          </a>
+        </div>
+        <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a class="item-wrap">
+            <div class="work-info">
+              <h3>NSS</h3> <span>Computer Literacy Mission.</span>
+            </div> <img class="img-fluid" src="assets/images/gallery/4.jpeg">
+          </a>
+        </div>
+        <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a class="item-wrap">
+            <div class="work-info">
+              <h3>Me</h3> <span>Happy 😊</span>
+            </div> <img class="img-fluid" src="assets/images/gallery/6.jpeg">
+          </a>
+        </div>
+        <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a class="item-wrap">
+            <div class="work-info">
+              <h3>Teachers Day</h3>
+            </div> <img class="img-fluid" src="assets/images/gallery/5.jpeg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="contact py-5" id="contact">
     <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-12 col-lg-8 mb-2 mb-lg-0">
+          <h2>Contact</h2>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-5 mr-lg-5 col-12">
           <div class="google-map w-100">
@@ -270,8 +358,8 @@
               <li><a href="https://www.linkedin.com/in/amitadhikari-" class="fa-brands fa-linkedin-in"
                   data-toggle="tooltip" data-placement="left" title="linkedin"></a>
               </li>
-              <li><a href="https://www.instagram.com/_amamit_" class="fa-brands fa-instagram"
-                  data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+              <li><a href="https://www.instagram.com/_amamit_" class="fa-brands fa-instagram" data-toggle="tooltip"
+                  data-placement="left" title="Instagram"></a></li>
               <li><a href="https://github.com/adhikari-amit" class="fa-brands fa-github" data-toggle="tooltip"
                   data-placement="left" title="github"></a>
               </li>
@@ -308,8 +396,9 @@
         </div>
       </div>
     </div>
-
   </section>
+
+
 
   <footer class="bg-dark text-center text-white">
     <div class="container p-4 pb-0">
@@ -318,8 +407,7 @@
           href="https://www.linkedin.com/in/amitadhikari-" role="button" target="_blank"><i
             class="fa-brands fa-linkedin-in"></i></a>
         <a class="btn btn-primary btn-floating m-1 btn-footer" style="background-color: #55acee; border: none;"
-          href="https://twitter.com/_amamit_" role="button" target="_blank"> <i
-            class="fa-brands fa-twitter"></i></a>
+          href="https://twitter.com/_amamit_" role="button" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
 
         <a class="btn btn-primary btn-floating m-1 btn-footer" style="background-color:  #DC4F42; border: none;"
           href="https://www.instagram.com/_amamit_" role="button" target="_blank"><i
@@ -339,13 +427,21 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/contact.js"></script>
+
   <script>
-    var load = document.getElementById("loading")
-    function loadfun() {
-      load.style.display = 'none'
+    //Hide Loading Box (Preloader)
+    function handlePreloader() {
+      if ($('.preloader').length) {
+        $('.preloader').delay(200).fadeOut(500);
+      }
     }
+
+    $(window).on('load', function () {
+      handlePreloader();
+    });
+
   </script>
- 
+
 
 </body>
 

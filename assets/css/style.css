@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
 
+
 body {
     font-family: "Maven Pro", sans-serif;
     padding-top: 70px
@@ -70,8 +71,8 @@ h2 {
     font-weight: bold
 }
 
-h3 {
-    color: #484848
+.h3 {
+    font-size: 20px;
 }
 
 h3,
@@ -521,6 +522,82 @@ strong {
 .social-links .uil:hover {
     color: #3ba1fa
 }
+
+  
+.item {
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+  .item .item-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .item .item-wrap:after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .item .item-wrap img {
+    transition: 0.3s transform ease;
+    transform: scale(1);
+  }
+  
+  .item .item-wrap>.work-info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+  }
+  
+  .item .item-wrap>.work-info h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  
+  .item .item-wrap>.work-info span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  
+  .item .item-wrap:hover {
+    text-decoration: none;
+  }
+  
+  .item .item-wrap:hover img {
+    transform: scale(1.05);
+  }
+  
+  .item .item-wrap:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .item .item-wrap:hover .work-info {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+  }
+
 
 @media (min-width:1270px) {
     .owl-theme .owl-dots {
